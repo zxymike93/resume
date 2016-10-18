@@ -1,93 +1,146 @@
 <!DOCTYPE html>
-<!-- IE8 兼容问题 -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 <html lang="en">
 <head>
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8" name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>郑新雨-简历</title>
   <style media="screen">
-/*     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 320px) {
+      .resume-container {
+        width: 100%;
+        margin: 0;
+      }
+      .resume-main-left,
+      .resume-main-right {
+        width: 100%;
+        float: none;
+      }
+      .resume-title {
+        float: none;
+        text-align: center;
+        margin: 0;
+      }
+      .resume-main {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    @media screen and (min-width: 768px) {
       .resume-container {
         width: 750px;
       }
-    } */
-    @media screen and (min-width: 992px) {
+      .resume-container {
+        margin: 10px auto;
+      }
+      .resume-title {
+        float: right;
+        text-align: right;
+        margin: 0;
+        font-size: 30px;
+      }
+      .resume-main {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    }
+    @media screen and (min-width: 990px) {
       .resume-container {
         width: 970px;
       }
-    }
-    @media screen and (min-width: 1200px) {
-      .resume-container {
-        width: 1030px;
+      .resume-main-left,
+      .resume-main-right {
+        width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
       }
     }
     * {
       box-sizing: border-box;
     }
     body {
-      background: gray;
       padding: 0;
       margin: 0;
+      background-color: #e0e0e0;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    strong {
+      color: rgba(206, 49, 184, 0.87);
+    }
+    .resume-container {
+      padding-bottom: 10px;
+      background-color: white;
+      box-shadow: 3px 3px 9px rgba(0,0,0,.2);
     }
     .row {
       overflow: hidden;
     }
-    .resume-container {
-      margin-top: 10px;
-      margin-right: auto;
-      margin-left: auto;
-      background-color: #fff;
-      box-shadow: 3px 3px 9px rgba(0,0,0,.2);
-    }
     .resume-header {
+      padding: 20px 30px;
       background-color: #333;
       color: white;
     }
-    .resume-title {
-      float: right;
-      text-align: right;
-      margin: 0;
-      font-size: 30px;
+    .resume-name {
+      font-size: 74px;
+      font-weight: bold;
+    }
+    .resume-job {
+      font-size: 25px;
     }
     .resume-contact {
       float: left;
-      margin: 0;
+      font-size: 18px;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+    .resume-contact > ul {
+      list-style-type: none;
     }
     .resume-main {
+      margin-top: 30px;
     }
-    .resume-main-left {
-      width: 50%;
-      position: relative;
-      min-height: 1px;
+    .line {
+      background-color: #333;
+      color: white;
+      border-radius: 3px;
       padding-left: 15px;
-      padding-right: 15px;
-      float: left;
     }
-    .resume-main-right {
-      width: 50%;
+    .resume-cell-list {
+      padding-right: 15px;
+      margin-bottom: 40px;
+    }
+    .resume-project > ul {
+      list-style-type: none;
+    }
+    ul {
+      list-style-type: disc;
+    }
+    p {
       position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
-      float: left;
+      margin-bottom: 4px;
+      font-weight: bold;
+      font-size: 25px;
     }
-    @media screen and (max-width: 991px) {
-      .resume-title {
-        float: none;
-        text-align: center;
-      }
-      .resume-main-left,
-      .resume-main-right {
-        width: 100%;
-        float: none;
-        padding: 0;
-      }
-      .resume-container {
-        margin: 0;
-      }
+    a {
+      position: absolute;
+      right: 10px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: normal;
+      color: black;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 1px;
+      padding: 0 5px;
+    }
+    a:hover {
+      background-color: black;
+      color: white;
     }
   </style>
 </head>
@@ -95,10 +148,10 @@
   <div class="resume-container">
     <div class="resume-header row">
       <div class="resume-title">
-        <div class="">郑新雨</div>
-        <div class="">前端 / Python 后端</div>
+        <div class="resume-name">郑新雨</div>
+        <div class="resume-job">Python 后端工程师</div>
       </div>
-      <div class="resume-contect">
+      <div class="resume-contact">
         <ul>
             <li>Email: zxymike93@gmail.com</li>
             <li>Cellphone: 15626133744</li>
@@ -110,82 +163,98 @@
 
     <div class="resume-main row">
       <div class="resume-main-left">
-        <div class="resume-study">
-          <h2>教育经历</h2>
-          <ul>
+        <div class="resume-cell">
+          <div class="line"><h2>教育经历</h2></div>
+          <div class="resume-cell-list">
+            <ul>
               <li>广东财经大学</li>
               <li>信息管理与信息系统</li>
               <li>17年本科学士毕业</li>
-          </ul>
+            </ul>
+          </div>
         </div>
-        <div class="resume-project">
-          <h2>项目经验</h2>
-          <ul>
-              <li>
-                  <p><a href="https://github.com/zxymike/todolist">Todolist</a></p>
-                  <ul>
-                      <li>基于 <strong>Flask</strong> 的待办事项管理网站</li>
-                      <li>网站地址（www.zhengxinyu.cc）</li>
-                      <li>用户功能（注册/登陆/验证）和用户私人的 todolist 功能</li>
-                      <li>使用 Blueprint 组织路由模块</li>
-                      <li>使用 <strong>SQLAlchemy</strong> 管理数据库</li>
-                  </ul>
-              </li>
-              <li>
-                  <p><a href="https://github.com/zxymike/spider">Spider</a></p>
-                  <ul>
-                      <li>爬取“豆瓣” top250 电影信息</li>
-                      <li>使用 <strong>requests</strong> 库向服务器发送请求/接收响应</li>
-                      <li>使用 <strong>lxml</strong> 库和 <strong>XPath</strong> 来解析出所需要的信息</li>
-                  </ul>
-              </li>
-              <li>
-                  <p><a href="https://github.com/zxymike/chat-room">Chat-Room</a></p>
-                  <ul>
-                      <li>在线实时多人聊天室</li>
-                      <li>使用 <strong>gunicorn</strong> 和 <strong>gevent</strong> 来启动程序，实现并发</li>
-                      <li>使用本地的 <strong>redis</strong> 服务器实现实时接收和广播消息功能</li>
-                      <li>使用 Flask 管理路由、渲染模板、提供 <strong>API</strong></li>
-                      <li>使用 JavaScript 操作浏览器，负责发布和同步聊天消息</li>
-                      <li>前后端用 <strong>JSON</strong> 格式交互数据</li>
-                  </ul>
-              </li>
-              <li>
-                  <p><a href="https://github.com/zxymike/framework">Web 服务器框架</a></p>
-                  <ul>
-                      <li>基于 <strong>socket</strong> 的简单 <strong>Web 服务器框架</strong></li>
-                      <li>实现框架基本的功能（响应、url 映射、模板渲染、重定向、cookies/session 等）</li>
-                      <li>另编写了一个<strong>客户端</strong>程序（能发送 http 请求，接收并解析响应）</li>
-                  </ul>
-              </li>
-          </ul>
+        <div class="resume-cell">
+          <div class="line"><h2>项目经验</h2></div>
+          <div class="resume-project resume-cell-list">
+            <ul>
+                <li>
+                    <p>Todo List<a href="https://github.com/zxymike/todolist">源代码</a></p>
+                    <ul>
+                        <li>基于 <strong>Flask</strong> 的待办事项管理网站 - <strong>www.zhengxinyu.cc</strong></li>
+                        <li>用户功能（注册/登陆/验证）和用户私人的 todolist 功能</li>
+                        <li>使用 Blueprint 组织路由模块</li>
+                        <li>使用 <strong>SQLAlchemy</strong> 管理数据库</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Spider<a href="https://github.com/zxymike/spider">源代码</a></p>
+                    <ul>
+                        <li>爬取“豆瓣” top250 电影信息</li>
+                        <li>使用 <strong>requests</strong> 库向服务器发送请求/接收响应</li>
+                        <li>使用 <strong>lxml</strong> 库和 <strong>XPath</strong> 来解析出所需要的信息</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Chat Room<a href="https://github.com/zxymike/chat-room">源代码</a></p>
+                    <ul>
+                        <li>在线实时多人聊天室</li>
+                        <li>使用 <strong>gunicorn</strong> 和 <strong>gevent</strong> 启动程序，实现并发</li>
+                        <li>使用本地的 <strong>redis</strong> 服务器实现实时接收和广播消息功能</li>
+                        <li>使用 Flask 管理路由、渲染模板、提供 <strong>API</strong></li>
+                        <li>使用 JavaScript 操作浏览器，负责发布和同步聊天消息</li>
+                        <li>前后端用 <strong>JSON</strong> 格式交互数据</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Flamework<a href="https://github.com/zxymike/framework">源代码</a></p>
+                    <ul>
+                        <li>基于 <strong>socket</strong> 的简单 <strong>Web 服务器框架</strong></li>
+                        <li>实现框架基本的功能（响应、url 映射、模板渲染、重定向、cookies/session 等）</li>
+                        <li>另编写了一个<strong>客户端</strong>程序（能发送 http 请求，接收并解析响应）</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="resume-main-right">
-        <div class="resume-skill">
-          <h2>技能</h2>
-          <ul>
-              <li>能编写语义化的 <strong>HTML</strong> 和模块化的 <strong>CSS</strong>，实现常用的布局与动画</li>
-              <li>熟练使用 <strong>JavaScript</strong> 操作页面和使用 <strong>Ajax</strong> 与后端交互数据，熟悉 <strong>jQuery</strong></li>
-              <li>熟练掌握 <strong>Python</strong>，熟悉 <strong>Flask</strong>，了解 <strong>Django</strong></li>
-              <li>掌握 <strong>SQL 语句</strong>，能用 <strong>Sqlite</strong> 开发项目，有 <strong>MySQL</strong> 使用经验，了解 <strong>NoSQL</strong></li>
-              <li>有半年 <strong>Linux</strong> 使用经验，有自己的服务器，熟悉常用命令，能写简单的配置文件</li>
-              <li>日常使用 <strong>Git</strong> 管理项目，惯用 <strong>CLI</strong>，用过 <strong>GUI</strong>，具有 <strong>github</strong> 和 <strong>gitlab</strong>等远程仓库使用经验</li>
-              <li>能用 <strong>MarkDown</strong> 编写结构良好的文档</li>
-              <li>具备基本的 <strong>Web 安全</strong>知识（XSS / CSRF 等）和<strong>数据库安全</strong>知识（SQL 注入等）</li>
-              <li>日常使用 <strong>PyCharm</strong> / <strong>Atom</strong> / <strong>Sublime</strong> 等开发工具，乐于尝试新工具</li>
-              <li>了解 <strong>Apache</strong> 和 <strong>Nginx</strong></li>
-          </ul>
+        <div class="resume-cell">
+          <div class="line"><h2>技能</h2></div>
+          <div class="resume-cell-list">
+            <ul>
+                <li>熟悉 <strong>HTML</strong> 和 <strong>CSS</strong>，能实现常用的布局、动画、响应式页面</li>
+                <li>熟练使用 <strong>JavaScript</strong> 操作页面和使用 <strong>Ajax</strong> 与后端交互数据，熟悉 <strong>jQuery</strong></li>
+                <li>熟练掌握 <strong>Python</strong>，熟悉 <strong>Flask</strong>，了解 <strong>Django</strong></li>
+                <li>掌握 <strong>SQL 语句</strong>，能用 <strong>Sqlite</strong> 开发项目，有 <strong>MySQL</strong> 使用经验，了解 <strong>NoSQL</strong></li>
+                <li>半年 <strong>Linux</strong> 使用经验，有自己的服务器，熟悉常用命令，能写简单的配置文件</li>
+                <li>日常使用 <strong>Git</strong> 管理项目，惯用 CLI，用过 GUI，具有 github 和 gitlab 等远程仓库使用经验</li>
+                <li>能用 <strong>MarkDown</strong> 编写结构良好的文档</li>
+                <li>具备基本的 <strong>Web 安全</strong> 知识（XSS / CSRF 等）和<strong>数据库安全</strong> 知识（SQL 注入等）</li>
+                <li>日常使用 <strong>PyCharm</strong> / <strong>Atom</strong> / <strong>Sublime</strong> 等开发工具，乐于尝试新工具</li>
+                <li>了解 <strong>Apache</strong> 和 <strong>Nginx</strong></li>
+            </ul>
+          </div>
         </div>
-        <div class="resume-language">
-          <h2>语言水平</h2>
-          <ul>
-              <li>CET-4 / CET-6</li>
-              <li>能流畅阅读官方英文文档</li>
-              <li>长期通过 Google / Stack Overflow 解决技术疑问</li>
-              <li>参加过广外的英文翻译学硕士，离A线3分</li>
-              <li>学过基础法语</li>
-          </ul>
+        <div class="resume-cell">
+          <div class="line"><h2>语言水平</h2></div>
+          <div class="resume-cell-list">
+            <ul>
+                <li>CET-4 / CET-6</li>
+                <li>能流畅阅读官方英文文档</li>
+                <li>长期通过 Google / Stack Overflow 解决技术疑问</li>
+                <li>参加过广外的英文翻译学硕士，离A线3分</li>
+                <li>学过基础法语</li>
+            </ul>
+          </div>
+        </div>
+        <div class="resume-cell">
+          <div class="line"><h2>业余爱好</h2></div>
+          <div class="resume-cell-list">
+            <ul>
+              <li>热爱运动，喜欢篮球、长跑，也懂足球、游泳等各类体育项目</li>
+              <li>坚持广泛阅读，除技术类，也读新闻、虚构、管理等各类书刊</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
