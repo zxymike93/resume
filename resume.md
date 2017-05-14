@@ -1,7 +1,7 @@
 # 简历 MarkDown
 
 
-##基本信息
+## 基本信息
 
 - 郑新雨
 - 前端/Python后端
@@ -11,14 +11,14 @@
 - Github: [github.com/gayu-mike](https://github.com/gayu-mike)
 
 
-##教育经历
+## 教育经历
 
 - 广东财经大学
 - 信息管理与信息系统
 - 17年本科学士毕业
 
 
-##语言水平
+## 语言水平
 
 - CET-4 / CET-6
 - 能流畅阅读官方英文文档
@@ -27,17 +27,17 @@
 - 学过基础法语
 
 
-##项目经验
+## 项目经验
 
 1. [Blog](https://github.com/gayu-mike/zhengxinyu-dot-cc)
 
     > 基于 **Django** 的个人博客
 
-    - admin: 管理文章发布
-    - bootstrap + templatetags：支持 markdown 语法在前端渲染
-    - paginator / logging: email / file /console
+    - django-admin: 管理文章发布
     - postgresql
     - gunicorn / nginx: 服务器
+    - bootstrap + templatetags：支持 markdown 语法在前端渲染
+    - paginator / logging: email / file /console
 
 2. [DoCount](https://github.com/gayu-mike/DoCount)
 
@@ -62,21 +62,15 @@
 - 安创科技
 
 
-##技能列表
+## 技能列表
 
-- 熟悉 **HTML** 和 **CSS**，能实现常用的布局、动画、响应式页面
+- 熟悉 **HTML** 和 **CSS**，能实现的布局、动画、响应式页面
 - 熟练使用 **JavaScript** 操作页面和使用 **Ajax** 与后端交互数据，熟悉 **jQuery**
-- 熟练掌握 **Python**，熟悉 **Flask**，了解 **Django**
-- 掌握 **SQL 语句**，能用 **Sqlite** 开发项目，有 **MySQL** 使用经验，了解 **NoSQL**
-- 半年 **Linux** 使用经验，有自己的服务器，熟悉常用命令，能写简单的配置文件
-- 日常使用 **Git** 管理项目，惯用 CLI，用过 GUI，具有 github 和 gitlab 等远程仓库使用经验
-- 能用 **MarkDown** 编写结构良好的文档
-- 具备基本的 **Web 安全** 知识（XSS / CSRF 等）和**数据库安全** 知识（SQL 注入等）
-- 日常使用 **PyCharm** / **Atom** / **Sublime** 等开发工具，乐于尝试新工具
-- 了解 **Apache** 和 **Nginx**半年 **Linux** 使用经验，有自己的服务器，熟悉常用命令，能写简单的配置文件
-- 日常使用 **Git** 管理项目，惯用 CLI，用过 GUI，具有 github 和 gitlab 等远程仓库使用经验
+- 熟练使用 **Python** 编程，有 **Django** / **Flask** 的项目经验和 **Scrapy** 的项目经验
+- 掌握 **SQL 语句**，有 **MySQL** / **PostgreSQL** 使用经验，了解 **Redis** / **MongoDB**
+- 熟悉 **Linux** 环境下的编程，了解 **Shell** 脚本
+- 熟练使用 **Git** 管理项目，具有 github / gitlab 使用经验
 - 能用 **MarkDown** 编写结构良好的文档
 - 具备基本的 **Web 安全** 知识（XSS / CSRF 等）和**数据库安全** 知识（SQL 注入等）
 - 日常使用 **vi** / **PyCharm** / **Atom** 等开发工具，乐于尝试新工具
-- 了解 **Apache** 和 **Nginx**
-- 有 **Docker** 使用经验
+- 有 **Docker** / **Nginx** 使用经验
