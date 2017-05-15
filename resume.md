@@ -54,7 +54,7 @@
 
     - User 模块（注册/登陆/验证）
     - Todo 模块（查询/增加/删除）
-    - **Flask-SQLAlchemy** + **SQLite** 管理数据库
+    - 数据库使用 **SQLite** ，使用 **Flask-SQLAlchemy** 操作
 
 
 ## 工作经历
