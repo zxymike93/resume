@@ -33,20 +33,21 @@
 
     > 基于 **Django** 的个人博客
 
-    - django-admin: 管理文章发布
-    - postgresql
-    - gunicorn / nginx: 服务器
-    - bootstrap + templatetags：支持 markdown 语法在前端渲染
-    - paginator / logging: email / file /console
+    - 文章的增删改查使用 django-admin 进行管理
+    - 前端采用 Bootstrap 的模板
+    - 支持 MarkDown 语法，使用 Pygments 支持代码高亮
+    - 采用 Email 的方式处理报错信息
+    - 使用 Gunicorn + Nginx 部署在 VPS 上
 
 2. [DoCount](https://github.com/gayu-mike/DoCount)
 
-    > 员工数据可视化
+    > 员工数据统计和可视化 web 应用
 
-    - openpyxl: 读取 excel 表格
-    - scrapy
-    - django-restful + echart: 前端数据展示
-    - docker 部署
+    - 使用 openpyxl 处理考勤记录表
+    - 使用 Scrapy 爬取内网技术文章发布信息
+    - 使用 Django Rest framework 提供 API
+    - 利用 Echart 图表化数据
+    - docker + docker-compose 完成部署
 
 3. [TodoList](https://github.com/zxymike/todolist)
 
