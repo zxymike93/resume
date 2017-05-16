@@ -6,6 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="styleshee" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <title>郑新雨-简历</title>
   <style media="screen">
     @media screen and (max-width: 989px) {
@@ -64,9 +65,6 @@
       background-color: #e0e0e0;
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    strong {
-      color: darkmagenta;
-    }
     .resume-container {
       padding-bottom: 10px;
       background-color: white;
@@ -77,8 +75,8 @@
     }
     .resume-header {
       padding: 20px 30px;
-      background-color: #333;
       color: white;
+      background-color: #333;
     }
     .resume-name {
       font-size: 74px;
@@ -115,11 +113,32 @@
     ul {
       list-style-type: disc;
     }
+    .resume-job-period {
+      margin-left: 20px;
+      font-size: 0.5em;
+    }
     p {
       position: relative;
       margin-bottom: 4px;
       font-weight: bold;
       font-size: 25px;
+    }
+    blockquote {
+      border-left: 10px solid #333;
+      margin: 1.0em 10px;
+      padding: 0.1em 10px;
+    }
+    /* blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-left: 5em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    } */
+    blockquote p {
+      display: inline;
     }
     a {
       position: absolute;
@@ -137,6 +156,9 @@
       background-color: black;
       color: white;
     }
+    strong {
+      color: darkmagenta;
+    }
   </style>
 </head>
 <body>
@@ -148,10 +170,10 @@
       </div>
       <div class="resume-contact">
         <ul>
-            <li>Email: zxymike93@gmail.com</li>
-            <li>Cellphone: 15626133744</li>
-            <li>Wechat: ZHENGXINYUHEHE</li>
-            <li>Github: https://github.com/gayu-mike</li>
+            <li><i class="ion-email">Email</i> zxymike93@gmail.com</li>
+            <li><i class="ion-iphone">Cellphone</i> 15626133744</li>
+            <li><i classs="ion-chatbubble-working">Wechat</i> 59421692</li>
+            <li><i class="ion-social-github">Github</i> https://github.com/gayu-mike</li>
         </ul>
       </div>
     </div>
@@ -159,7 +181,68 @@
     <div class="resume-main row">
       <div class="resume-main-left">
         <div class="resume-cell">
-          <div class="line"><h2>教育经历</h2></div>
+          <div class="line"><h2>工作经历</h2></div>
+          <div class="resume-cell-list resume-project">
+            <ul>
+              <li><p>安创科技<span class="resume-job-period" style="margin-right:10px;">2016.11 - 2017.5<span></p></li>
+              <blockquote>Python 开发（实习）</blockquote>
+              <ul>
+                <li>手机应用安全检测项目</li>
+                <ul>
+                  <li>使用 <strong>Scrapy</strong> 采集各大手机应用市场 APP 信息、下载 APK</li>
+                  <li>使用 shutil / re 等库，为服务端调用 APK 检测工具</li>
+                </ul>
+                <li>互联网资产安全监控项目</li>
+                <ul>
+                  <li>使用 Scrapy 为项目爬取 漏洞信息 / POC / Expoit 数据</li>
+                  <li>使用 <strong>Django</strong> 开发数据库管理应用，供项目人员更新数据库</li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+        </div><!-- 工作 -->
+        <div class="resume-cell">
+          <div class="line"><h2>个人项目</h2></div>
+          <div class="resume-project resume-cell-list">
+            <ul>
+                <li>
+                    <p>Blog<a href="https://github.com/gayu-mike/zhengxinyu-dot-cc/">源代码</a></p>
+                    <blockquote>基于 Django 的个人博客</blockquote>
+                    <ul>
+                        <li>文章的增删改查使用 django-admin 进行管理</li>
+                        <li>前端采用 <strong>Bootstrap</strong> 的模板</li>
+                        <li>支持 MarkDown 书写，<strong>Pygments</strong> 完成-代码高亮</li>
+                        <li>采用 Email 的方式处理报错信息</li>
+                        <li>使用 Gunicorn + Nginx 部署在 VPS 上</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>DoCount<a href="https://github.com/gayu-mike/DoCount/">源代码</a></p>
+                    <blockquote>员工数据统计和可视化 web 应用</blockquote>
+                    <ul>
+                        <li>使用 <strong>openpyxl</strong> 处理考勤记录表</li>
+                        <li>使用 Scrapy 爬取内网技术文章发布信息</li>
+                        <li>使用 <strong>Django Rest framework</strong> 提供 API</li>
+                        <li>利用 <strong>Echart</strong> 图表化数据</li>
+                        <li>Docker + Docker Compose 完成部署</li>
+                    </ul>
+                </li>
+                <li>
+                  <p>TodoList<a href="https://github.com/gayu-mike/todolist/">源代码</a></p>
+                    <blockquote>基于 Flask 的个人待办事项管理网站</blockquote>
+                  <ul>
+                    <li>User 模块（注册/登陆/验证）</li>
+                    <li>Todo 模块（查询/增加/删除）</li>
+                    <li><strong>Flask-SQLAlchemy</strong> 操作数据库</li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div><!-- 项目 -->
+      </div><!-- resume-main-left -->
+      <div class="resume-main-right">
+        <div class="resume-cell">
+          <div class="line"><h2>学历背景</h2></div>
           <div class="resume-cell-list">
             <ul>
               <li>广东财经大学</li>
@@ -167,71 +250,26 @@
               <li>17年本科学士毕业</li>
             </ul>
           </div>
-        </div>
-        <div class="resume-cell">
-          <div class="line"><h2>项目经验</h2></div>
-          <div class="resume-project resume-cell-list">
-            <ul>
-                <li>
-                    <p>Todo List<a href="https://github.com/zxymike/todolist">源代码</a></p>
-                    <ul>
-                        <li>基于 <strong>Flask</strong> 的待办事项管理网站 - <strong>www.zhengxinyu.cc</strong></li>
-                        <li>用户功能（注册/登陆/验证）和用户私人的 todolist 功能</li>
-                        <li>使用 Blueprint 组织路由模块</li>
-                        <li>使用 <strong>SQLAlchemy</strong> 管理数据库</li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Spider<a href="https://github.com/zxymike/spider">源代码</a></p>
-                    <ul>
-                        <li>爬取“豆瓣” top250 电影信息</li>
-                        <li>使用 <strong>requests</strong> 库向服务器发送请求/接收响应</li>
-                        <li>使用 <strong>lxml</strong> 库和 <strong>XPath</strong> 来解析出所需要的信息</li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Chat Room<a href="https://github.com/zxymike/chat-room">源代码</a></p>
-                    <ul>
-                        <li>在线实时多人聊天室</li>
-                        <li>使用 <strong>gunicorn</strong> 和 <strong>gevent</strong> 启动程序，实现并发</li>
-                        <li>使用本地的 <strong>redis</strong> 服务器实现实时接收和广播消息功能</li>
-                        <li>使用 Flask 管理路由、渲染模板、提供 <strong>API</strong></li>
-                        <li>使用 JavaScript 操作浏览器，负责发布和同步聊天消息</li>
-                        <li>前后端用 <strong>JSON</strong> 格式交互数据</li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Flamework<a href="https://github.com/zxymike/framework">源代码</a></p>
-                    <ul>
-                        <li>基于 <strong>socket</strong> 的简单 <strong>Web 服务器框架</strong></li>
-                        <li>实现框架基本的功能（响应、url 映射、模板渲染、重定向、cookies/session 等）</li>
-                        <li>另编写了一个<strong>客户端</strong>程序（能发送 http 请求，接收并解析响应）</li>
-                    </ul>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="resume-main-right">
+        </div><!-- 学历 -->
         <div class="resume-cell">
           <div class="line"><h2>技能</h2></div>
           <div class="resume-cell-list">
             <ul>
-                <li>熟悉 <strong>HTML</strong> 和 <strong>CSS</strong>，能实现常用的布局、动画、响应式页面</li>
-                <li>熟练使用 <strong>JavaScript</strong> 操作页面和使用 <strong>Ajax</strong> 与后端交互数据，熟悉 <strong>jQuery</strong></li>
-                <li>熟练掌握 <strong>Python</strong>，熟悉 <strong>Flask</strong>，了解 <strong>Django</strong></li>
-                <li>掌握 <strong>SQL 语句</strong>，能用 <strong>Sqlite</strong> 开发项目，有 <strong>MySQL</strong> 使用经验，了解 <strong>NoSQL</strong></li>
-                <li>半年 <strong>Linux</strong> 使用经验，有自己的服务器，熟悉常用命令，能写简单的配置文件</li>
-                <li>日常使用 <strong>Git</strong> 管理项目，惯用 CLI，用过 GUI，具有 github 和 gitlab 等远程仓库使用经验</li>
+                <li>熟悉 <strong>HTML</strong> / <strong>CSS</strong>，能实现基本的布局、动画、响应式页面</li>
+                <li>熟练使用 <strong>JavaScript</strong> 操作页面和使用 Ajax 与后端交互数据，熟悉 jQuery</li>
+                <li>熟练使用 Python 编程，有 Django / Flask 的项目经验和 Scrapy 的项目经验</li>
+                <li>掌握 SQL 语句，有 <strong>MySQL</strong> / <strong>PostgreSQL</strong> 使用经验，了解 Redis / MongoDB</li>
+                <li>熟悉 <strong>Linux</strong> 环境下的编程，了解 Shell 脚本</li>
+                <li>熟练使用 <strong>Git</strong> 管理项目，具有 github / gitlab 使用经验</li>
                 <li>能用 <strong>MarkDown</strong> 编写结构良好的文档</li>
-                <li>具备基本的 <strong>Web 安全</strong> 知识（XSS / CSRF 等）和<strong>数据库安全</strong> 知识（SQL 注入等）</li>
-                <li>日常使用 <strong>PyCharm</strong> / <strong>Atom</strong> / <strong>Sublime</strong> 等开发工具，乐于尝试新工具</li>
-                <li>了解 <strong>Apache</strong> 和 <strong>Nginx</strong></li>
+                <li>具备基本的 Web 安全 知识（XSS / CSRF 等）和数据库安全 知识（SQL 注入等）</li>
+                <li>日常使用 vi / PyCharm / Atom 等开发工具，乐于尝试新工具</li>
+                <li>有 <strong>Docker</strong> / <strong>Nginx</strong> 使用经验</li>
             </ul>
           </div>
-        </div>
+        </div><!-- 技能 -->
         <div class="resume-cell">
-          <div class="line"><h2>语言水平</h2></div>
+          <div class="line"><h2>外语</h2></div>
           <div class="resume-cell-list">
             <ul>
                 <li>CET-4 / CET-6</li>
@@ -240,19 +278,10 @@
                 <li>参加过广外的英文翻译学硕士，离A线3分</li>
                 <li>学过基础法语</li>
             </ul>
-          </div>
+          </div><!-- 外语 -->
         </div>
-        <div class="resume-cell">
-          <div class="line"><h2>业余爱好</h2></div>
-          <div class="resume-cell-list">
-            <ul>
-              <li>热爱运动，喜欢篮球、长跑，也懂足球、游泳等各类体育项目</li>
-              <li>坚持广泛阅读，除技术类，也读新闻、虚构、管理等各类书刊</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      </div><!-- resume-main-right -->
+    </div><!-- resume-main -->
   </div>
 </body>
 </html>
