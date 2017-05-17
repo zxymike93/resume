@@ -140,6 +140,10 @@
       display: inline;
     }
     a {
+      color: white;
+      text-decoration: none;
+    }
+    a.code {
       position: absolute;
       right: 10px;
       text-decoration: none;
@@ -151,7 +155,7 @@
       border-width: 1px;
       padding: 0 5px;
     }
-    a:hover {
+    a.code:hover {
       background-color: black;
       color: white;
     }
@@ -191,7 +195,7 @@
             <li><i class="iconfont icon-gmail"></i> zxymike93@gmail.com</li>
             <li><i class="iconfont icon-cellphone-fill"></i> 15626133744</li>
             <li><i class="iconfont icon-wechat"></i> 59421692</li>
-            <li><i class="iconfont icon-github"></i> https://github.com/gayu-mike</li>
+            <li><i class="iconfont icon-github"></i> <a href="https://github.com/gayu-mike">https://github.com/gayu-mike</a></li>
         </ul>
       </div>
     </div>
@@ -224,7 +228,7 @@
           <div class="resume-project resume-cell-list">
             <ul>
                 <li>
-                    <p>Blog<a href="https://github.com/gayu-mike/zhengxinyu-dot-cc/">源代码</a></p>
+                    <p>Blog<a class="code" href="https://github.com/gayu-mike/zhengxinyu-dot-cc/">源代码</a></p>
                     <blockquote>基于 Django 的个人博客</blockquote>
                     <ul>
                         <li>文章的增删改查使用 django-admin 进行管理</li>
@@ -235,7 +239,7 @@
                     </ul>
                 </li>
                 <li>
-                    <p>DoCount<a href="https://github.com/gayu-mike/DoCount/">源代码</a></p>
+                    <p>DoCount<a class="code" href="https://github.com/gayu-mike/DoCount/">源代码</a></p>
                     <blockquote>员工数据统计和可视化 web 应用</blockquote>
                     <ul>
                         <li>使用 <strong>openpyxl</strong> 处理考勤记录表</li>
@@ -246,7 +250,7 @@
                     </ul>
                 </li>
                 <li>
-                  <p>TodoList<a href="https://github.com/gayu-mike/todolist/">源代码</a></p>
+                  <p>TodoList<a class="code" href="https://github.com/gayu-mike/todolist/">源代码</a></p>
                     <blockquote>基于 Flask 的个人待办事项管理网站</blockquote>
                   <ul>
                     <li>User 模块（注册/登陆/验证）</li>
